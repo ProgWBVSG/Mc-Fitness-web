@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { MapPin, Smartphone, Dumbbell, HeartPulse, Instagram } from 'lucide-react';
+import styles from './page.module.css';
+
 const WA_NUMBER = '5493513093652';
 
 const waMessages = [
@@ -33,7 +35,7 @@ export default function ContactoPage() {
             {/* Main */}
             <section className="section">
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'start' }}>
+                    <div className={styles.gridContainer}>
 
                         {/* WhatsApp fast contact */}
                         <div>
