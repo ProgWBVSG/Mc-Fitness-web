@@ -17,7 +17,7 @@ export default function Footer() {
                         <path d="M52 6 L72 6 L67 16 Z" fill="#E8541A" />
                         <text x="0" y="40" fontFamily="Montserrat, sans-serif" fontWeight="700" fontSize="11" fill="rgba(255,255,255,0.8)" letterSpacing="3">FITNESS</text>
                     </svg>
-                    <p className={styles.tagline}>Calidad boutique, espíritu de barrio.</p>
+                    <p className={styles.tagline}>Sé tu mejor versión en MC Fitness.</p>
                     <div className={styles.socials}>
                         <a href="https://instagram.com/mcfitnesslasdelicias" target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="Instagram">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

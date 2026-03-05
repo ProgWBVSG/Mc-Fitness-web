@@ -4,7 +4,7 @@ import { Trophy, Users, Dumbbell, Leaf } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: 'Nosotros | MC Fitness Las Delicias',
-    description: 'Conocé la historia, valores y equipo de MC Fitness Las Delicias. Gimnasio boutique de barrio en Córdoba.',
+    description: 'Conocé la historia, valores y equipo de MC Fitness Las Delicias en Córdoba.',
 };
 
 const WA_NUMBER = '5493513093652';
@@ -25,8 +25,8 @@ export default function NosotrosPage() {
                 <div className={styles.heroBg} />
                 <div className={`container ${styles.heroContent}`}>
                     <span className={styles.tag}>Nosotros</span>
-                    <h1>La Historia Detrás del Gym Boutique de Las Delicias</h1>
-                    <p>Un proyecto nacido del barrio para el barrio. Con la convicción de que la calidad premium y la calidez familiar no son opuestos.</p>
+                    <h1>La Historia Detrás de MC Fitness Las Delicias</h1>
+                    <p>Un proyecto nacido con la convicción de brindar calidad premium y calidez familiar.</p>
                 </div>
             </section>
 

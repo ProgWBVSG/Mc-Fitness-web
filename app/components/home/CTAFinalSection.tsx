@@ -14,7 +14,7 @@ export default function CTAFinalSection() {
                 <p className={styles.text}>
                     Dejá de buscar el gimnasio perfecto. <strong>Acabás de encontrarlo.</strong>
                     <br /><br />
-                    En MC Fitness no solo vas a entrenar: vas a formar parte de una comunidad que te motiva, vas a trabajar con entrenadores que te conocen de verdad y vas a disfrutar de instalaciones que combinan calidad boutique con el calor de un espacio familiar.
+                    En MC Fitness no solo vas a entrenar: vas a formar parte de una comunidad que te motiva, vas a trabajar con entrenadores que te conocen de verdad y vas a disfrutar de instalaciones de primera calidad con el calor de un espacio familiar.
                     <br /><br />
                     <em>Tu mejor versión te está esperando. Y está más cerca de lo que pensás.</em>
                 </p>

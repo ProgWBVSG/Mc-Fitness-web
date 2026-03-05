@@ -10,7 +10,7 @@ const WA_HERO = encodeURIComponent('Hola! Quiero probar mi primera clase gratis 
 const slides = [
     {
         bg: '/images/slide1.png',
-        badge: 'Gimnasio boutique · Las Delicias, Córdoba',
+        badge: 'MC Fitness · Las Delicias, Córdoba',
         title: 'TU MEJOR VERSIÓN EMPIEZA AQUÍ',
         subtitle: 'Equipamiento premium · Entrenadores profesionales',
         cta: 'Empezá Hoy',
