@@ -1,0 +1,225 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 32px;
+    align-items: start;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--primary);
+}
+
+.cardHeader {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    padding: 36px 40px;
+    text-align: center;
+    color: white;
+}
+
+.planName {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+}
+
+.precio {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.currency {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 8px;
+}
+
+.amount {
+    font-family: var(--font-heading);
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+}
+
+.period {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    align-self: flex-end;
+    padding-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.beneficios {
+    padding: 28px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.beneficios li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.93rem;
+    color: var(--text-body);
+}
+
+.check {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(232, 84, 26, 0.12);
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctaBtn {
+    display: block;
+    margin: 0 36px 16px;
+    text-align: center;
+}
+
+.pilatesNote {
+    margin: 0 36px 28px;
+    padding: 14px 16px;
+    background: var(--bg-light);
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+.pilatesNote a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Right column */
+.rightCol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.freeClass {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    color: white;
+    text-align: center;
+}
+
+.freeIcon {
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+}
+
+.freeClass h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.freeClass p {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.65;
+    margin-bottom: 20px;
+}
+
+.freeClass .btn {
+    background: white;
+    color: var(--accent);
+    width: 100%;
+    justify-content: center;
+}
+
+.freeClass .btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.guarantees {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 24px 28px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+}
+
+.guarantees h4 {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+}
+
+.guarantee {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--text-body);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--bg-light);
+}
+
+.guarantee:last-child {
+    border-bottom: none;
+}
+
+.guaranteeCheck {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(232, 84, 26, 0.1);
+    color: var(--accent);
+    font-weight: 900;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .beneficios {
+        padding: 24px 20px;
+    }
+
+    .ctaBtn,
+    .pilatesNote {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

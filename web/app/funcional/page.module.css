@@ -1,0 +1,325 @@
+/* Shared styles for secondary pages */
+
+.hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: var(--primary-dark);
+}
+
+.heroBg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 70% 60% at 80% 30%, rgba(232, 84, 26, 0.4) 0%, transparent 60%),
+        linear-gradient(135deg, rgba(13, 46, 85, 0.85) 0%, rgba(27, 79, 138, 0.9) 100%),
+        url('/images/hero-funcional.png') center/cover no-repeat;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+    padding-top: 48px;
+    padding-bottom: 80px;
+    max-width: 760px;
+}
+
+.tag {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.heroContent h1 {
+    color: white;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.heroContent p {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 32px;
+    max-width: 600px;
+}
+
+.heroCtas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
+
+.heroInfo {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-full);
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Funcional specific */
+.queEs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.queEs p {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.methodology {
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    border: 1px solid var(--border);
+}
+
+.methodology h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.methodList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.methodList li {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.methodList li>span {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--accent);
+    opacity: 0.3;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.methodList li>div strong {
+    display: block;
+    font-size: 0.92rem;
+    color: var(--text-dark);
+    margin-bottom: 2px;
+}
+
+.methodList li>div p {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Benefits grid */
+.benefGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.benefCard {
+    padding: 28px 24px;
+    background: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.benefCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.benefIcon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.benefCard h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+.benefCard p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* CTASection */
+.ctaSection {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+/* Pilates specific */
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.intro p {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.infoBox {
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    border: 1px solid var(--border);
+}
+
+.infoBox h3 {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.paraQuien {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.paraQuien li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.88rem;
+    color: var(--text-body);
+}
+
+.paraQuien li span {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+.sedes {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.sede {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.divider {
+    width: 1px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sedesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.sedeCard {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 36px 32px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.sedeCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.sedeIcon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.sedeCard h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.sedeCard p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+
+    .queEs,
+    .intro,
+    .benefGrid,
+    .sedesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .sedes {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .heroInfo {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

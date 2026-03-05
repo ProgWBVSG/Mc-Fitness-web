@@ -1,0 +1,208 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: var(--primary-dark);
+}
+
+.bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.activeBg {
+    opacity: 1;
+}
+
+.bgGradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        radial-gradient(ellipse 80% 60% at 70% 40%, rgba(232, 84, 26, 0.15) 0%, transparent 60%),
+        linear-gradient(135deg, rgba(13, 46, 85, 0.85) 0%, rgba(27, 79, 138, 0.7) 40%, rgba(13, 46, 85, 0.9) 100%);
+}
+
+.bgPattern {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    max-width: 820px;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+}
+
+.slideContent {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+    transition-delay: 0s;
+}
+
+.activeSlide {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+.topBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    padding: 8px 16px;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.04em;
+    margin-bottom: 28px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: float 2s ease-in-out infinite;
+}
+
+.title {
+    font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+    font-weight: 900;
+    color: white;
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.accent {
+    color: var(--accent);
+    position: relative;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: rgba(255, 255, 255, 0.78);
+    max-width: 620px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+/* Slider Controls */
+.sliderControls {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    gap: 12px;
+}
+
+.sliderDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: var(--transition);
+}
+
+.activeDot {
+    background: var(--accent);
+    width: 32px;
+    border-radius: 6px;
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.scrollIndicator span {
+    display: block;
+    width: 24px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    position: relative;
+}
+
+.scrollIndicator span::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 8px;
+    background: white;
+    border-radius: 2px;
+    animation: float 1.5s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding-top: 40px;
+        padding-bottom: 80px;
+        min-height: 520px;
+    }
+
+    .slideContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        left: 0;
+    }
+
+    .subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ctas {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ctas .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,134 @@
+.section {
+    background: var(--bg-light);
+}
+
+.card {
+    max-width: 760px;
+    margin: 0 auto;
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: 48px 52px;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    text-align: center;
+}
+
+.quoteIcon {
+    font-size: 5rem;
+    line-height: 0.6;
+    color: var(--accent);
+    opacity: 0.25;
+    font-family: Georgia, serif;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.cita {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-body);
+    font-style: italic;
+    margin-bottom: 32px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.nombre {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-dark);
+    text-align: left;
+}
+
+.tiempo {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    text-align: left;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0;
+}
+
+.dotActive {
+    background: var(--accent);
+    width: 24px;
+    border-radius: 4px;
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.arrow {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid var(--border);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    cursor: pointer;
+    color: var(--text-body);
+}
+
+.arrow:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.cta {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 36px 28px;
+    }
+
+    .cita {
+        font-size: 1rem;
+    }
+}
