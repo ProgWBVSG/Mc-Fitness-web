@@ -1,18 +1,16 @@
-# Credenciales y secretos
-.env
-*.env.local
-*.env.*.local
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
 
-# Credenciales OAuth de Google
-token.json
-credentials.json
-*_credentials.json
-*_token.json
+# next.js
+/.next/
+/out/
 
-# Datos temporales
-.tmp/
+# production
+/build
 
-# Python
+# Python & Data
 __pycache__/
 *.py[cod]
 *.pyo
@@ -20,9 +18,9 @@ __pycache__/
 .Python
 *.egg-info/
 dist/
-build/
 *.egg
 .eggs/
+.tmp/
 
 # Virtual environments
 venv/
@@ -30,12 +28,25 @@ env/
 .venv/
 .env/
 
-# IDEs
+# IDEs & OS
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# OS
 .DS_Store
 Thumbs.db
+
+# env files
+.env
+.env*
+token.json
+credentials.json
+*_credentials.json
+*_token.json
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
