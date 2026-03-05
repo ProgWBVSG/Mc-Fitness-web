@@ -1,0 +1,9 @@
+# Dependencias del proyecto MC Fitness Gym
+# Actualizar este archivo cada vez que se añada una nueva librería
+
+# Utilidades generales
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Manejo de datos
+pandas>=2.0.0
