@@ -18,7 +18,7 @@ export default function ProgramasSection() {
                 {/* Funcional */}
                 <div className={`${styles.programa} fade-up`}>
                     <div className={styles.programaImg}>
-                        <div className={styles.imgPlaceholder} style={{ background: 'linear-gradient(135deg, #1B4F8A 0%, #0d2e55 100%)' }}>
+                        <div className={styles.imgPlaceholder} style={{ backgroundImage: 'url("/images/hero-funcional.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                             <div className={styles.imgOverlay}>
                                 <span className={styles.programaBadge}><Dumbbell className="w-4 h-4 inline-block mr-1" /> Entrenamiento Funcional</span>
                                 <ul className={styles.horarioList}>
@@ -93,7 +93,7 @@ export default function ProgramasSection() {
                         </a>
                     </div>
                     <div className={styles.programaImg}>
-                        <div className={styles.imgPlaceholder} style={{ background: 'linear-gradient(135deg, #E8541A 0%, #c44310 100%)' }}>
+                        <div className={styles.imgPlaceholder} style={{ backgroundImage: 'url("/images/hero-pilates.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                             <div className={styles.imgOverlay}>
                                 <span className={styles.programaBadge}><HeartPulse className="w-4 h-4 inline-block mr-1" /> MC Pilates</span>
                                 <ul className={styles.horarioList}>
